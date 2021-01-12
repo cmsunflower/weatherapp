@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+.App{
+  display:block;
+  margin: 50px auto;
+  text-align:center;
+  width:600px;
+  max-width:600px;
+  max-height:600px;
+  font-family: '微软雅黑';
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  padding:0;margin:0 auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width:992px){
+  .container{
+    max-width:960px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul,li{padding:0;margin:0;}
+.row{
+  display:flex;
+  flex-direction: row;
 }
-
-.App-link {
-  color: #61dafb;
+.Header{}
+.temperature{
+  font-size:30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.unit{
+  font-size: 15px;
 }
+.Info{
+  text-align:left;
+  margin:auto;
+}
+.Weather{
+  text-align:right;
+}
+.Stats{
+  font-size: 15px;
+}
+.Stats .lists{
+  list-style: none;
+}
+.col-6{flex:0 0 50%;}
+.Search{
+  width:100%;
+}
+.Search form{
+  padding:30px;
+}
+.searchCity{
+  border:1px solid #ccc;
+  outline: none;
+  font-size:15px;
+  border-radius:4px;
+  padding:5px;
+  box-sizing: border-box;
+  box-shadow:1px 1px 2px #ccc;
+}
+.searchSubmit{
+  margin-left:10px;
+  font-size:15px;
+  border-radius:4px;
+  padding:5px;
+  letter-spacing: 2px;
+  border:none;
+}
+.HourlyForecast{flex:1;}
