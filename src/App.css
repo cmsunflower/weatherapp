@@ -15,6 +15,7 @@ body{
   text-align:center;
   width:480px;
   max-width:480px;
+  font-size:14px;
   font-family: '微软雅黑';
 }
 .container{
@@ -48,9 +49,6 @@ ul,li{padding:0;margin:0;}
 }
 .Weather{
   text-align:right;
-}
-.Stats{
-  font-size: 15px;
 }
 .Stats .lists{
   list-style: none;
