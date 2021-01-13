@@ -1,14 +1,29 @@
+
+body{
+  margin:0;
+  padding:0;
+  background-image: linear-gradient(to right,#ADA996,#F2F2F2,#DBDBDB,#EAEAEA);
+}
+.link{
+  text-decoration: none;
+  color:#ccc;
+}
 .App{
-  display:block;
-  margin: 50px auto;
+  display:flex;
+  flex-direction: column;
+  margin:0 auto;
   text-align:center;
-  width:600px;
-  max-width:600px;
-  max-height:600px;
+  width:480px;
+  max-width:480px;
   font-family: '微软雅黑';
 }
 .container{
-  padding:0;margin:0 auto;
+  padding:0;
+  margin:0 auto;
+}
+.Footer{
+  padding: 20px;
+  box-sizing: border-box;
 }
 @media (min-width:992px){
   .container{

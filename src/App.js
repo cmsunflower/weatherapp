@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Get, Post} from './http';
+import {Get} from './http';
 import timeFormat from './util';
 import './App.css';
 import Footer from './Footer';
@@ -49,15 +49,15 @@ export default function App() {
     return (
       <div className="App">
         <div className="container">
-          <Header data={weatherData} />
+          <Header data={weatherData}/>
           <Icon data={weatherData} />
           <Search
             onHandleSubmit={changeDisplay}
             autoFocus="on"
             onHandleChange={updateCity} />
           <Forecast data={weatherData.futherWeather} />
-          <Footer />
         </div>
+        <Footer />
       </div>
     );
   } else {

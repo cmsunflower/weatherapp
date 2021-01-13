@@ -13,8 +13,8 @@ export default function Icon(props) {
     };
     let defaults = {
         icon: iconMap[props.data.icon] ||'CLEAR_DAY',
-        color: 'goldenrod',
-        size: 100,
+        color: '#666',
+        size: props.data.size||100,
         animate: true
     };
     return (

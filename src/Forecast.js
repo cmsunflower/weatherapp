@@ -5,6 +5,7 @@ export default function Forecast(props){
     let arr = props.data;
     let forecast = arr.map(item =>{
         item['icon'] = item.textDay;
+        item['size'] = 64;
         return <HourlyForecast key={item.fxDate} data={item}/>}
     );
     return (
