@@ -1,0 +1,82 @@
+
+body{
+  margin:0;
+  padding:0;
+  background-image: linear-gradient(to right,#ADA996,#F2F2F2,#DBDBDB,#EAEAEA);
+}
+.link{
+  text-decoration: none;
+  color:#ccc;
+}
+.App{
+  display:flex;
+  flex-direction: column;
+  margin:0 auto;
+  text-align:center;
+  width:480px;
+  max-width:480px;
+  font-family: '微软雅黑';
+}
+.container{
+  padding:0;
+  margin:0 auto;
+}
+.Footer{
+  padding: 20px;
+  box-sizing: border-box;
+}
+@media (min-width:992px){
+  .container{
+    max-width:960px;
+  }
+}
+ul,li{padding:0;margin:0;}
+.row{
+  display:flex;
+  flex-direction: row;
+}
+.Header{}
+.temperature{
+  font-size:30px;
+}
+.unit{
+  font-size: 15px;
+}
+.Info{
+  text-align:left;
+  margin:auto;
+}
+.Weather{
+  text-align:right;
+}
+.Stats{
+  font-size: 15px;
+}
+.Stats .lists{
+  list-style: none;
+}
+.col-6{flex:0 0 50%;}
+.Search{
+  width:100%;
+}
+.Search form{
+  padding:30px;
+}
+.searchCity{
+  border:1px solid #ccc;
+  outline: none;
+  font-size:15px;
+  border-radius:4px;
+  padding:5px;
+  box-sizing: border-box;
+  box-shadow:1px 1px 2px #ccc;
+}
+.searchSubmit{
+  margin-left:10px;
+  font-size:15px;
+  border-radius:4px;
+  padding:5px;
+  letter-spacing: 2px;
+  border:none;
+}
+.HourlyForecast{flex:1;}
